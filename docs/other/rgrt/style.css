@@ -1,0 +1,95 @@
+body{
+  margin:0px;
+}
+@media screen and (min-width:1024px){
+  .Main{
+    margin:0 20%;
+  }
+}
+.blank{
+  background:#000;
+  position:relative;
+  z-index:1;
+}
+ul{
+  list-style-type:none;
+  padding:0px;
+  margin:0px;
+  font-size:0px;
+}
+@media screen and (min-width:1024px){
+  .button{
+    color:#000;
+    background:#FFF;
+    transition-property:background,color;
+    transition-duration:0.2s;
+    user-select:none;
+    padding:0 10px;
+    display:inline-block;
+    font-size:22px;
+  }
+}
+@media screen and (max-width:1023px){
+  .button{
+    color:#000;
+    background:#FFF;
+    transition-property:background,color;
+    transition-duration:0.2s;
+    user-select:none;
+    padding:0 10px;
+    display:inline-block;
+    font-size:72px;
+  }
+}
+ul:last-child{
+  float:none;
+}
+.akabou{
+  background:#D74949;
+}
+.kaonasi{
+  background:#C4C4FF;
+}
+.hakorobo{
+  background:#E1E1E1;
+}
+.kirokuya{
+  background:#8ECFBC;
+}
+.murasaki{
+  background:#AA95C7;
+}
+.button:hover{
+  background:#000;
+  color:#FFF;
+  cursor:default;
+}
+.docMain > div{
+  padding-bottom:1em;
+  border-bottom:solid 1px #CCC;
+}
+.docMain{
+  padding:1em;
+  position:relative;
+  z-index:3;
+  color:#222;
+}
+h2:first-letter{
+  font-size:1.8em;
+}
+.chadec{
+  padding:1em;
+  display:none;
+}
+.chadec_open{
+  display:block;
+}
+.copyright{
+  background:#000;
+  color:white;
+  text-align:right;
+  font-size:10px;
+  position:relative;
+  z-index:3;
+  padding-right:1em;
+}
