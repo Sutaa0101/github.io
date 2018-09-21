@@ -17,3 +17,25 @@ body{
     text-shadow: #030 1px 1px 2px;
     float: left;
 }
+
+#inputCode{
+    background: #FFF;
+    border: none;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    transition-duration:0.1s;
+}
+#inputCode:hover{
+    background:#DDD;
+}
+
+#searchSubmit{
+    background:#DDD;
+    border: none;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    transition-duration:0.1s;
+}
+#searchSubmit:hover{
+    background:#AAA;
+}
