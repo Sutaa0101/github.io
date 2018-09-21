@@ -1,0 +1,19 @@
+body{
+    background:#000;
+    color:#FFF;
+}
+
+.inputArea{
+    margin:4em auto;
+    text-align:center;
+}
+
+.sentence{
+    margin: 0.5em;
+    padding: 1em;
+    border: double 4px #EEE;
+    background: #555;
+    color: #EEE;
+    text-shadow: #030 1px 1px 2px;
+    float: left;
+}
