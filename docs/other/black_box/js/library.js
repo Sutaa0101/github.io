@@ -8,8 +8,7 @@ function searchLib(){
     
     request.onload = function(){
         let doc = request.response;
-        let json = JSON.parse(doc);
-        console.log(json);
+        console.log(doc);
     }
     return false;
 }
