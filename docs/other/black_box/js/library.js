@@ -1,8 +1,13 @@
 let xml = new XMLHttpRequest();
 let requestURL = "./json/library.json";
+let doc;
+
 xml.open("GET",requestURL);
 xml.responseType = "json";
 xml.send();
+xml.onload = function(){
+    doc = xml.response;   
+}
 
 function searchLib(inputCode){
     let code = inputCode;
@@ -10,11 +15,7 @@ function searchLib(inputCode){
 
     if(code == "") return result;
 
-    xml.onload = function(){
-        let doc = xml.response;
-        result = searchSentence(code,doc);
-    }
-    
+    result = searchSentence(code,doc);
     return result;
 }
 
