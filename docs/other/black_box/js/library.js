@@ -15,13 +15,13 @@ function searchLib(inputCode){
 
     if(code == "") return result;
 
-    result = searchSentence(code,doc);
+    result = searchSentence(code,doc.sentence);
     return result;
 }
 
 function searchSentence(inputCode,docAry){
     let code = inputCode;
-    let sen = docAry.sentence;
+    let sen = docAry;
 
     for(let i = 0;i<sen.length;i++){
         let name = sen[i].name;
@@ -35,4 +35,7 @@ function searchSentence(inputCode,docAry){
             return result;
         }
     }
+
+    let result = [false,""];
+    return result;
 }

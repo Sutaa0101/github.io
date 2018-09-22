@@ -13,6 +13,8 @@ function inputSearch(){
     let result = searchLib(inputCode.value);
     if(result[0]){
         createOutput(result[1]);
+    }else{
+        window.alert("ERROR!");
     }
     inputCode.value = "";
 }
