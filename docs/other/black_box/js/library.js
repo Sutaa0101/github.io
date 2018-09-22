@@ -13,7 +13,7 @@ function searchLib(inputCode){
     
     xml.onload = function(){
         let doc = xml.response;
-        result[1] = searchSentence(code,doc);
+        result = searchSentence(code,doc);
 
     }
     
@@ -28,10 +28,11 @@ function searchSentence(inputCode,docAry){
         let name = sen[i].name;
         let deName = CryptoJS.AES.decrypt(name,code);
         if(code === deName.toString(CryptoJS.enc.Utf8)){
-            result[0] = true;
+            let result = [true,""];
             let data = sen[i].data;
             let deData = CryptoJS.AES.decrypt(data,code);
-            let result = deData.toString(CryptoJS.enc.Utf8);
+            
+            result[1] = deData.toString(CryptoJS.enc.Utf8);
             return result;
         }
     }
