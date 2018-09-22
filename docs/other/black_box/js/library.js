@@ -11,12 +11,8 @@ function searchLib(inputCode){
     xml.responseType = "json";
     xml.send();
     
-    xml.onload = function(){
-        let doc = xml.response;
-        result = searchSentence(code,doc);
-
-    }
-    
+    let doc = xml.response;
+    result = searchSentence(code,doc);
     return result;
 }
 
