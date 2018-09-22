@@ -16,11 +16,6 @@ function searchLib(inputCode){
         searchSentence(code,doc);
 
     }
-
-    let str = "BLACK BOXとは、何らかのcodeを入力する事で隠されたコンテンツを表示する不明な存在です。これは何ですか？";
-    let key = "about";
-    let encrypted = CryptoJS.AES.encrypt(str, key);
-    console.log(encrypted.toString());
     
     return result;
 }
