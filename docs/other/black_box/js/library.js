@@ -1,14 +1,27 @@
-function searchLib(){
-    let requestURL = "./json/sentence.json";
-    let request = new XMLHttpRequest();
-    request.open("GET",requestURL);
+function searchLib(inputCode){
+    let code = inputCode;
 
-    request.responseType= "json";
-    request.send();
+    let xml = new XMLHttpRequest();
+    let requestURL = "./json/sentence.json";
+
+    xml.open("GET",requestURL);
+    xml.responseType = "json";
+    xml.send();
     
-    request.onload = function(){
-        let doc = request.response;
-        console.log(doc);
+    xml.onload = function(){
+        let doc = xml.response;
+        let sen = doc.sentence;
+        sen.foreach(function(value){
+            console.log(value);
+        });
     }
-    return false;
+
+    let str = "about";
+    let key = "about";
+    let encrypted = CryptoJS.AES.encrypt(str, key);
+    console.log(encrypted.toString());
+    let decrypted = CryptoJS.AES.decrypt(encrypted,key);
+    console.log(decrypted.toString(CryptoJS.enc.Utf8));
+    
+    return true;
 }
