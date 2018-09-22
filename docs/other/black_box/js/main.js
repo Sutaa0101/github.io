@@ -10,8 +10,9 @@ document.onkeydown = function(event){
 function inputSearch(){
     let inputCode = document.getElementById("inputCode");
 
-    if(searchLib(inputCode.value)){
-        createOutput(inputCode.value);
+    let result = searchLib(inputCode.value);
+    if(result[0]){
+        createOutput(result[1]);
     }
     inputCode.value = "";
 }
