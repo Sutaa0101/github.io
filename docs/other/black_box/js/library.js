@@ -13,7 +13,7 @@ function searchLib(inputCode){
     
     xml.onload = function(){
         let doc = xml.response;
-        searchSentence(code,doc);
+        result[1] = searchSentence(code,doc);
 
     }
     
@@ -31,9 +31,8 @@ function searchSentence(inputCode,docAry){
             result[0] = true;
             let data = sen[i].data;
             let deData = CryptoJS.AES.decrypt(data,code);
-
-            result[1] = deData.toString(CryptoJS.enc.Utf8);
-            break;
+            let result = deData.toString(CryptoJS.enc.Utf8);
+            return result;
         }
     }
 }
