@@ -9,7 +9,10 @@ document.onkeydown = function(event){
 
 function inputSearch(){
     let inputCode = document.getElementById("inputCode");
-    createOutput(inputCode.value);
+
+    if(searchLib(inputCode.value)){
+        createOutput(inputCode.value);
+    }
     inputCode.value = "";
 }
 
