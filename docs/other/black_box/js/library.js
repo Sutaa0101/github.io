@@ -1,8 +1,9 @@
 function searchLib(inputCode){
     let code = inputCode;
 
+
     let xml = new XMLHttpRequest();
-    let requestURL = "./json/sentence.json";
+    let requestURL = "./json/library.json";
 
     xml.open("GET",requestURL);
     xml.responseType = "json";
@@ -11,9 +12,15 @@ function searchLib(inputCode){
     xml.onload = function(){
         let doc = xml.response;
         let sen = doc.sentence;
-        sen.foreach(function(value){
-            console.log(value);
-        });
+        
+        for(let i = 0;i<sen.length;i++){
+            let name = sen[i].name;
+            let deName = CryptoJS.AES.decrypt(name,code);
+            if(code == deName){
+                console.log(sen[i].data);
+                break;
+            }
+        }
     }
 
     let str = "about";
