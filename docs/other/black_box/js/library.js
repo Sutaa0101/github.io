@@ -43,8 +43,9 @@ function searchSentence(inputCode,docAry){
 
                 result.data.push(deData.toString(CryptoJS.enc.Utf8));
             }
-        }
+        
         return result;
+        }
     }
     
     

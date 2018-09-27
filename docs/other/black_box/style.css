@@ -3,13 +3,18 @@ body{
     color:#FFF;
 }
 
+p{
+    margin:0.5em 0;
+}
+
 .inputArea{
     margin:4em auto;
     text-align:center;
 }
 
 .docTitle{
-
+    font-weight: bold;
+    border-bottom: solid 2px #EEE;
 }
 
 .docBody{
