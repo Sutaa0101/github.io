@@ -8,6 +8,14 @@ body{
     text-align:center;
 }
 
+.docTitle{
+
+}
+
+.docBody{
+
+}
+
 .sentence{
     margin: 0.5em;
     padding: 1em;
@@ -18,6 +26,8 @@ body{
     float: left;
     width:20em;
 }
+
+
 
 #inputCode{
     background: #FFF;

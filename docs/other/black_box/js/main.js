@@ -32,13 +32,28 @@ function createOutput(type,data,code){
 }
 
 function createSentence(code,data){
-    let inputCode = document.createTextNode(code);
-    let sentence = document.createTextNode(data);
-    let outputArea = document.getElementById("outputArea");
-    let newDiv = document.createElement("div");
+    let aryData = data;
 
+    let inputCode = document.createTextNode(code);
+    let outputArea = document.getElementById("outputArea");
+    
+    let titleDiv = document.createElement("div");
+    titleDiv.setAttribute("class","docTitle");
+    titleDiv.appendChild(inputCode);
+
+    let bodyDiv = document.createElement("div");
+    bodyDiv.setAttribute("class","docBody");
+
+    for(let i =0;i<aryData.length;i++){
+        let pElm = document.createElement("p");
+        let sen = document.createTextNode(aryData[i]);
+        pElm.appendChild(sen);
+        bodyDiv.appendChild(pElm);
+    }
+
+    let newDiv = document.createElement("div");
     newDiv.setAttribute("class","sentence");
-    newDiv.appendChild(inputCode);
-    newDiv.appendChild(sentence);
+    newDiv.appendChild(titleDiv);
+    newDiv.appendChild(bodyDiv);
     outputArea.appendChild(newDiv);
 }

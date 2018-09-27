@@ -14,7 +14,7 @@ function searchLib(inputCode){
     let result = {
         "poss":false,
         "type":"",
-        "data":""
+        "data":[]
     };
 
     if(code == "") return result;
@@ -34,20 +34,24 @@ function searchSentence(inputCode,docAry){
             let result = {
                 "poss":true,
                 "type":"sen",
-                "data":""
+                "data":[]
             };
-            let data = sen[i].data;
-            let deData = CryptoJS.AES.decrypt(data,code);
             
-            result.data = deData.toString(CryptoJS.enc.Utf8);
-            return result;
-        }
-    }
+            for(let j = 0;j<sen[i].data.length;j++){
+                let data = sen[i].data[j];
+                let deData = CryptoJS.AES.decrypt(data,code);
 
+                result.data.push(deData.toString(CryptoJS.enc.Utf8));
+            }
+        }
+        return result;
+    }
+    
+    
     let result = {
         "poss":false,
         "type":"",
-        "data":""
+        "data":[]
     };
     return result;
 }
