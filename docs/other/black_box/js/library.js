@@ -11,7 +11,11 @@ xml.onload = function(){
 
 function searchLib(inputCode){
     let code = inputCode;
-    let result = [false,""];
+    let result = {
+        "poss":false,
+        "type":"",
+        "data":""
+    };
 
     if(code == "") return result;
 
@@ -27,15 +31,23 @@ function searchSentence(inputCode,docAry){
         let name = sen[i].name;
         let deName = CryptoJS.AES.decrypt(name,code);
         if(code === deName.toString(CryptoJS.enc.Utf8)){
-            let result = [true,""];
+            let result = {
+                "poss":true,
+                "type":"sen",
+                "data":""
+            };
             let data = sen[i].data;
             let deData = CryptoJS.AES.decrypt(data,code);
             
-            result[1] = deData.toString(CryptoJS.enc.Utf8);
+            result.data = deData.toString(CryptoJS.enc.Utf8);
             return result;
         }
     }
 
-    let result = [false,""];
+    let result = {
+        "poss":false,
+        "type":"",
+        "data":""
+    };
     return result;
 }
