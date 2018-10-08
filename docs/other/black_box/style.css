@@ -19,21 +19,24 @@ p{
 }
 
 .docBody{
-
-}
-
-.sentence{
     margin: 0.5em;
     padding: 1em;
     border: double 4px #EEE;
     background: #555;
     color: #EEE;
+    float: left;
+    width:25em;
+}
+
+.sentence{
     text-shadow: #030 1px 1px 2px;
     float: left;
     width:25em;
 }
 
-
+.image{
+    text-shadow: #300 1px 1px 2px;
+}
 
 #inputCode{
     background: #FFF;

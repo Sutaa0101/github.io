@@ -24,7 +24,7 @@ function createOutput(type,data,code){
         createSentence(code,data);
     }
     else if(type == "img"){
-
+        createImage(code,data);
     }
     else{
 
@@ -53,6 +53,32 @@ function createSentence(code,data){
 
     let newDiv = document.createElement("div");
     newDiv.setAttribute("class","sentence");
+    newDiv.appendChild(titleDiv);
+    newDiv.appendChild(bodyDiv);
+    outputArea.appendChild(newDiv);
+}
+
+function createImage(code,data){
+    let aryData = data;
+
+    let inputCode = document.createTextNode(code);
+    let outputArea = document.getElementById("outputArea");
+    
+    let titleDiv = document.createElement("div");
+    titleDiv.setAttribute("class","docTitle");
+    titleDiv.appendChild(inputCode);
+
+    let bodyDiv = document.createElement("div");
+    bodyDiv.setAttribute("class","docBody");
+
+    for(let i =0;i<aryData.length;i++){
+        let iElm = document.createElement("img");
+        iElm.setAttribute("src",aryData[i]);
+        bodyDiv.appendChild(iElm);
+    }
+
+    let newDiv = document.createElement("div");
+    newDiv.setAttribute("class","image");
     newDiv.appendChild(titleDiv);
     newDiv.appendChild(bodyDiv);
     outputArea.appendChild(newDiv);
