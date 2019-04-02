@@ -20,14 +20,14 @@ function inputSearch(){
 }
 
 function createOutput(type,data,code){
-    if(type == "sen"){
-        createSentence(code,data);
-    }
-    else if(type == "img"){
-        createImage(code,data);
-    }
-    else{
+    switch(type){
+        case "sen":
+            createSentence(code,data); 
+        break;
 
+        case "img":
+            createImage(code,data);
+        break;
     }
 }
 
