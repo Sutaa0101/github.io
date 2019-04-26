@@ -1,0 +1,58 @@
+.about-area{
+    padding:2em;
+    font-family: "メイリオ";
+}
+.about-title{
+    font-size:2em;
+    margin:0;
+    user-select: none;
+    margin-bottom:0.5em;
+}
+@media screen and (max-width:545px){
+    .about-title{
+        font-size:1.4em; 
+        margin-bottom:0.8em;
+    }
+}
+@media screen and (max-width:400px){
+    .about-title{
+        font-size:1em;
+        font-weight: bold; 
+        margin-bottom:1em;
+    }
+}
+
+.about-profile{
+    padding:0.5em;
+    display: flex;
+    flex-wrap: wrap;
+    user-select: none;
+}
+.profile-icon{
+    border: 2px solid #FCFCFC;
+    display: block;
+    user-select: none;
+    margin-right:0.5em;
+}
+@media screen and (max-width:346px){
+    .profile-linkarea{
+        padding-top:0.5em;
+    }
+}
+.profile-links{
+    display: flex;
+}
+.profile-link-btn{
+    cursor: pointer;
+    display: block;
+    padding-right:0.25em;
+}
+
+.about-content{
+    text-indent: 1em;
+    padding-bottom: 3em;
+}
+.about-content a{
+    font-weight: bold;
+    color:#252525;
+}

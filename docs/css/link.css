@@ -1,0 +1,39 @@
+.link-area{
+    padding:2em;
+    font-family: "メイリオ";
+}
+.link-title{
+    font-size:2em;
+    margin:0;
+    user-select: none;
+    margin-bottom:0.5em;
+}
+@media screen and (max-width:545px){
+    .link-title{
+        font-size:1.4em; 
+        margin-bottom:0.8em;
+    }
+}
+@media screen and (max-width:400px){
+    .link-title{
+        font-size:1em;
+        font-weight: bold; 
+        margin-bottom:1em;
+
+    }
+}
+
+.link-content{
+    padding:0.5em;
+    text-align: center;
+}
+.link-self-banner{
+    padding: 0.25em;
+    margin-bottom:1em;
+}
+#link-banners p{
+    margin:0;
+}
+.link-banner{
+    margin-bottom:1em;
+}

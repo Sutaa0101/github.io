@@ -1,0 +1,66 @@
+body{
+    margin:0;
+    color:#252525;
+    background: #FCFCFC;
+}
+a{
+    text-decoration: none;
+    color:#FCFCFC;
+}
+a:hover{
+    color:#252525;
+}
+
+.base-black{
+    color:#FCFCFC;
+    background:#252525;
+    box-shadow: #252525 0 0 12px -3px;
+}
+
+/* メニューバー */
+.menu-list{
+    list-style: none;
+    margin:0;
+    padding:0;
+    height:auto;
+    font-size:5em;
+    display:flex;
+    justify-content: space-evenly;
+    user-select: none;
+    cursor: pointer;
+    font-family:"Century Gothic";
+}
+@media(min-width:1280px){
+    .menu-list{
+        padding:0 2em;
+    }
+}
+@media screen and (max-width:850px){
+    .menu-list{
+        font-size:1.75em;
+        padding-top:0.5em;
+    }
+}
+
+.menu-list>li:hover{
+    color:#252525;
+    background:#FCFCFC;
+    transition-duration: 0.2s;
+}
+.menu-list :nth-child(4){
+    float:none;
+}
+
+/* 著作権表示 */
+.copyright{
+    text-align: right;
+    padding:0.5em 1em 0.5em 1em;
+    position: fixed;
+    bottom:0px;
+    right:0px;
+    width:100%;
+    user-select: none;
+    font-family:"Century Gothic";
+    margin-left:auto;
+    z-index:10;
+}

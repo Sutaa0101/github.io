@@ -1,0 +1,37 @@
+[
+    {
+        "name":"ぬるおいの部屋",
+        "link":"http://www2.hp-ez.com/hp/nuruoiproject/index",
+        "img":"https://img-www2.hp-ez.com/img/nuruoiproject/img_20170304-121710.gif"
+    },
+    {
+        "name":"CACOTOPIA Act",
+        "link":"https://act.gz-cacotopia.net/",
+        "img":"img/banner/bana8.png"
+    },
+    {
+        "name":"空想開発室",
+        "link":"http://machine.no-mania.com/",
+        "img":"http://file.machine.no-mania.com/banner.png"
+    },
+    {
+        "name":"RIDO GAMES",
+        "link":"http://ridogames.web.fc2.com/",
+        "img":"img/banner/bana3.png"
+    },
+    {
+        "name":"Break the Loop",
+        "link":"http://breaktheloop.web.fc2.com/",
+        "img":"http://breaktheloop.web.fc2.com/_common/btl_banner_l.gif"
+    },
+    {
+        "name":"sinusoidal wave",
+        "link":"https://sinusoid.sakura.ne.jp/index.html",
+        "img":"https://sinusoid.sakura.ne.jp/PICT/banner_sinusoidal.gif"
+    },
+    {
+        "name":"ととと☆ぷろじぇくと",
+        "link":"http://tototoworld.web.fc2.com/",
+        "img":"http://tototoworld.web.fc2.com/images/totoprobanner.jpg"
+    }
+]

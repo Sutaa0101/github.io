@@ -1,0 +1,187 @@
+.game-area{
+    padding:2em;
+    font-family: "メイリオ";
+}
+.game-title{
+    font-size:2em;
+    margin:0;
+    user-select: none;
+    margin-bottom:0.5em;
+}
+@media screen and (max-width:545px){
+    .game-title{
+        font-size:1.4em; 
+        margin-bottom:0.8em;
+    }
+}
+@media screen and (max-width:400px){
+    .game-title{
+        font-size:1em;
+        font-weight: bold; 
+        margin-bottom:1em;
+
+    }
+}
+
+.game-jump-btn{
+    padding:0.5em;
+    font-size:1.5em;
+    margin:0 auto;
+    margin-bottom:1em;
+    max-width: 36em;
+}
+@media screen and (max-width:700px){
+    .game-jump-btn{
+        font-size:1em;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width:500px){
+    .game-jump-btn{
+        font-size:0.8em;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width:410px){
+    .game-jump-btn{
+        font-size:0.6em;
+        font-weight: bold;
+   }
+}
+
+.game-jump-btn ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content: space-around;
+    user-select: none;
+}
+.game-jump-btn ul > li{
+    transition-duration: 0.2s;
+}
+.game-jump-btn ul>li:hover{
+    color:#252525;
+    background:#FCFCFC;
+}
+
+.game-display{
+    display: flex;
+    border:2px solid #252525;
+    padding:0.5em;
+    box-shadow: #252525 0 10px 20px -10px;
+    margin-right:1em;
+    margin-bottom:1em;
+    max-width:60em;
+    max-height:128px;
+    
+}
+.game-display img{
+    display: block;
+    margin-right:1em;
+    max-width:128px;
+    max-height:128px;
+    width:25vw;
+    height: 25vw;
+}
+.game-data p{
+    margin:0;
+}
+.game-display-title{
+    font-size:1.5em;
+    font-weight: bold;
+    word-break: keep-all;
+}
+@media screen and (max-width:570px){
+    .game-display-title{
+        font-size:1em;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width:400px){
+    .game-display-title{
+        font-size:0.8em;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width:380px){
+    .game-display-title{
+        font-size:1em;
+        font-weight: bold;
+    }
+}
+
+.game-display-description{
+    font-size:1em;
+    padding:0.25em 0;
+}
+@media screen and (max-width:450px){
+    .game-display-description{
+        font-size:0.7em;
+    }
+}
+@media screen and (max-width:370px){
+    .game-display-description{
+        display: none;
+    }
+}
+
+.game-display-link{
+    font-size:1.2em;
+    font-weight: bold;
+    text-decoration-line: underline;
+    color:#252525;
+}
+@media screen and (max-width:570px){
+    .game-display-link{
+        font-size:1em;
+    }
+}
+@media screen and (max-width:570px){
+    .game-display-link{
+        font-size:0.8em;
+    }
+}
+.game-series-title{
+    width:fit-content;
+    padding:0.25em;
+    font-size:1.25em;
+    font-weight: bold;
+    color:#F0F0F0;
+    user-select: none;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.game-display-series{
+    display: flex;
+    flex-wrap: wrap;
+    padding:0 1em;
+}
+
+/* シリーズタイトルのボタン */
+#so-den .game-series-title:hover{
+    background:rgb(5, 75, 206);
+    color:#FCFCFC;
+}
+#non-series .game-series-title:hover{
+    color:#252525;
+    background:#FCFCFC;
+}
+#future-world .game-series-title:hover{
+    background:rgb(0, 189, 116);
+    color:#FCFCFC;
+}
+#future-history .game-series-title:hover{
+    background:rgb(2, 192, 218);
+    color:#252525;
+}
+#fantasy-mythology .game-series-title:hover{
+    background:rgb(206, 5, 5);
+    color:#FCFCFC;
+}
+#five-minute-escape .game-series-title:hover{
+    background:rgb(14, 199, 38);
+    color:#252525;
+}
+
+/* モーダル関係 */

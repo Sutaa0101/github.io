@@ -1,0 +1,91 @@
+.title-display{
+    text-align: center;
+    font-family:"Century Gothic";
+    user-select: none;
+    position: relative;
+    top:0px;
+    width: 100vw;
+    display: inline-block;
+    z-index:1;
+    pointer-events: none;
+    font-size:2.5em;
+    font-weight: bold;
+    
+    color:#FCFCFC;
+    text-shadow: #252525 0 0 10px;
+    background-image:url("../img/e.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@media screen and (min-width:1025px){
+    .title-display{
+        height: calc(100vh - (3em + 2em + 2.2em));
+        line-height: calc(100vh - (3em + 2em + 2.2em));
+    }
+}
+@media screen and (max-width:1024px){
+    .title-display{
+        height: calc(100vh - (3em + 2em + 5.5em));
+        line-height: calc(100vh - (3em + 2em + 5.5em));
+    }
+}
+@media screen and (max-width:850px){
+    .title-display{
+        height: calc(100vh - (3em + 2em + 4.3em));
+        line-height: calc(100vh - (3em + 2em + 4.3em));
+    }
+}
+@media screen and (max-width:768px){
+    .title-display{
+        height: calc(100vh - (3em + 2.1em));
+        line-height: calc(100vh - (3em + 2.1em));
+    }
+}
+
+
+
+/* ニュースエリア */
+.news-area{
+    padding:0.5em 2em 2.5em 4em;
+    position: absolute;
+    left:0px;
+    bottom:0px;
+    width:calc(100vw - 6em);
+    margin:0 auto;
+    z-index:5;
+}
+@media screen and (max-width:1024px){
+    .news-area{
+        font-size:1.7em;
+    }
+}
+
+@media screen and (max-width:768px){
+    .news-area{
+        padding-left:0.8em;
+        padding-right:0;
+        font-size:0.8em;
+
+        width:calc(100vw - 0.8em);
+    }
+}
+.news-title{
+    font-family:"Century Gothic";
+    font-size:2em;
+    margin:0;
+    user-select: none;
+}
+
+#news-content{
+    list-style: none;
+    font-family:"メイリオ";
+    margin-left:3em;
+    height:5em;
+    overflow: overlay;
+}
+
+#news-content dt{
+    float:left;
+    padding-right:1em;
+}
